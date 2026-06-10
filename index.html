@@ -11,6 +11,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -25,6 +26,8 @@ justify-content:space-between;
 align-items:center;
 padding:20px 10%;
 background:#111827;
+position:sticky;
+top:0;
 }
 
 nav ul{
@@ -39,18 +42,29 @@ text-decoration:none;
 }
 
 .hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px 20px;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
 .hero h1{
-font-size:3rem;
+font-size:4rem;
 margin-bottom:10px;
 }
 
 .hero h2{
 color:#38bdf8;
 margin-bottom:20px;
+min-height:40px;
+}
+
+.hero p{
+max-width:600px;
 }
 
 .btn{
@@ -60,16 +74,22 @@ background:#38bdf8;
 color:white;
 text-decoration:none;
 border-radius:5px;
-margin:5px;
+margin:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(56,189,248,0.3);
 }
 
 section{
-padding:60px 10%;
+padding:70px 10%;
 }
 
 section h2{
-margin-bottom:20px;
 text-align:center;
+margin-bottom:20px;
 }
 
 .skills{
@@ -83,6 +103,11 @@ gap:10px;
 background:#1e293b;
 padding:10px 15px;
 border-radius:20px;
+transition:0.3s;
+}
+
+.skills span:hover{
+background:#38bdf8;
 }
 
 .project{
@@ -90,6 +115,11 @@ background:#1e293b;
 padding:20px;
 border-radius:10px;
 margin-top:20px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
 }
 
 .project a{
@@ -100,10 +130,36 @@ color:#38bdf8;
 text-align:center;
 }
 
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
 footer{
 text-align:center;
 padding:20px;
 background:#111827;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero h2{
+font-size:1.2rem;
+}
 }
 </style>
 
@@ -123,12 +179,12 @@ background:#111827;
 
 <section class="hero">
 
-<h1>J. Henry Prabhu</h1>
+<h1>👋 Hi, I'm J. Henry Prabhu</h1>
 
-<h2>Computer Science Engineering Student</h2>
+<h2 id="typing"></h2>
 
 <p>
-Loyola ICAM College of Engineering and Technology (LICET)
+Computer Science Engineering Student passionate about Programming, Web Development and Building Real-World Projects.
 </p>
 
 <br>
@@ -152,7 +208,7 @@ LinkedIn
 <h2>About Me</h2>
 
 <p style="text-align:center;">
-I am a 2nd Year Computer Science Engineering student at Loyola ICAM College of Engineering and Technology (LICET). I am passionate about programming, web development, and building real-world projects.
+I am a Computer Science Engineering student at Loyola ICAM College of Engineering and Technology (LICET). I enjoy learning new technologies, solving problems and building useful software projects.
 </p>
 
 </section>
@@ -195,6 +251,16 @@ View Live Project
 
 </div>
 
+<div class="project">
+
+<h3>🌐 Portfolio Website</h3>
+
+<p>
+Personal portfolio website showcasing my skills, projects and contact information.
+</p>
+
+</div>
+
 </section>
 
 <section id="contact" class="contact">
@@ -220,8 +286,23 @@ Henry Prabhu
 </section>
 
 <footer>
-<p>© 2026 J. Henry Prabhu</p>
+<p>© 2026 J. Henry Prabhu | All Rights Reserved</p>
 </footer>
+
+<script>
+const text = "Aspiring Software Developer 🚀";
+let i = 0;
+
+function typeWriter() {
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typeWriter,100);
+}
+}
+
+window.onload = typeWriter;
+</script>
 
 </body>
 </html>
