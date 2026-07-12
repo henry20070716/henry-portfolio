@@ -1,308 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>J. Henry Prabhu | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Henry Prabhu | Portfolio</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
-}
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#111827;
-position:sticky;
-top:0;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e293b);
-}
-
-.hero h1{
-font-size:4rem;
-margin-bottom:10px;
-}
-
-.hero h2{
-color:#38bdf8;
-margin-bottom:20px;
-min-height:40px;
-}
-
-.hero p{
-max-width:600px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 20px;
-background:#38bdf8;
-color:white;
-text-decoration:none;
-border-radius:5px;
-margin:10px;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 20px rgba(56,189,248,0.3);
-}
-
-section{
-padding:70px 10%;
-}
-
-section h2{
-text-align:center;
-margin-bottom:20px;
-}
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
-.skills span{
-background:#1e293b;
-padding:10px 15px;
-border-radius:20px;
-transition:0.3s;
-}
-
-.skills span:hover{
-background:#38bdf8;
-}
-
-.project{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-margin-top:20px;
-transition:0.3s;
-}
-
-.project:hover{
-transform:translateY(-5px);
-}
-
-.project a{
-color:#38bdf8;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-}
-
-@media(max-width:768px){
-
-nav{
-flex-direction:column;
-gap:10px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero h1{
-font-size:2.5rem;
-}
-
-.hero h2{
-font-size:1.2rem;
-}
-}
-</style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-<h2>Henry</h2>
+<!-- ================= NAVBAR ================= -->
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Henry.</h2>
 
-<section class="hero">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<h1>👋 Hi, I'm J. Henry Prabhu</h1>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
 
-<h2 id="typing"></h2>
+<!-- ================= HERO ================= -->
 
-<p>
-Computer Science Engineering Student passionate about Programming, Web Development and Building Real-World Projects.
-</p>
+<section id="home" class="hero">
 
-<br>
+    <div class="hero-text">
 
-<a class="btn"
-href="https://github.com/henry20070716"
-target="_blank">
-GitHub
-</a>
+        <p>Hello, I'm</p>
 
-<a class="btn"
-href="https://www.linkedin.com/in/henry-prabhu-a8472636a"
-target="_blank">
-LinkedIn
-</a>
+        <h1>J. Henry Prabhu</h1>
+
+        <h3>
+            <span id="typing"></span>
+        </h3>
+
+        <p>
+            Passionate Computer Science student who enjoys
+            building modern web applications and solving
+            programming problems.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://github.com/henry20070716" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/henry-prabhu-a8472636a/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="profile.jpg.png" alt="Profile">
+
+    </div>
 
 </section>
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
-<h2>About Me</h2>
+    <h2 class="section-title">
+        About Me
+    </h2>
 
-<p style="text-align:center;">
-I am a Computer Science Engineering student at Loyola ICAM College of Engineering and Technology (LICET). I enjoy learning new technologies, solving problems and building useful software projects.
-</p>
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>Who Am I?</h3>
+
+            <p>
+                I'm J. Henry Prabhu, a Computer Science Engineering
+                student at Loyola ICAM College of Engineering and
+                Technology.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>What I Do</h3>
+
+            <p>
+                I build responsive websites using HTML, CSS and
+                JavaScript while improving my programming skills
+                in C and Python.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Goal</h3>
+
+            <p>
+                To become a skilled Software Engineer by creating
+                practical projects and continuously learning new
+                technologies.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
+
+ <!-- ================= SKILLS ================= -->
 
 <section id="skills">
 
-<h2>Skills</h2>
+    <h2 class="section-title">Skills</h2>
 
-<div class="skills">
-<span>C</span>
-<span>C++</span>
-<span>Java</span>
-<span>Python</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Git</span>
-<span>GitHub</span>
-</div>
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>C</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <h3>Git</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= PROJECTS ================= -->
 
 <section id="projects">
 
-<h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
 
-<div class="project">
+    <div class="projects-container">
 
-<h3>💰 Personal Finance Tracker</h3>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing my skills and projects.</p>
 
-<p>
-A web application built using HTML, CSS and JavaScript to track income, expenses and balance.
-</p>
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
 
-<br>
+            <div class="buttons">
+                <a href="https://henry20070716.github.io/henry-portfolio/" target="_blank">Live Demo</a>
+                <a href="https://github.com/henry20070716/henry-portfolio" target="_blank">GitHub</a>
+            </div>
+        </div>
 
-<a href="https://henry20070716.github.io/personal-finance-tracker/" target="_blank">
-View Live Project
-</a>
+        <div class="project-card">
+            <h3>Habit Tracker V2</h3>
+            <p>Track daily habits with progress and Local Storage.</p>
 
-</div>
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
 
-<div class="project">
+            <div class="buttons">
+                <a href="https://henry20070716.github.io/Habit-Tracker-Version-2/" target="_blank">Live Demo</a>
+                <a href="https://github.com/henry20070716/Habit-Tracker-Version-2" target="_blank">GitHub</a>
+            </div>
+        </div>
 
-<h3>🌐 Portfolio Website</h3>
+        <div class="project-card">
+            <h3>Personal Finance Tracker</h3>
+            <p>Manage income and expenses with charts.</p>
 
-<p>
-Personal portfolio website showcasing my skills, projects and contact information.
-</p>
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
 
-</div>
+            <div class="buttons">
+                <a href="https://henry20070716.github.io/personal-finance-tracker/" target="_blank">Live Demo</a>
+                <a href="https://github.com/henry20070716" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Study Planner</h3>
+            <p>Plan study schedules and monitor progress.</p>
+
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
+
+            <div class="buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </div>
 
 </section>
 
-<section id="contact" class="contact">
+<!-- ================= EDUCATION ================= -->
 
-<h2>Contact</h2>
+<section id="education">
 
-<p>
-GitHub:
-<a href="https://github.com/henry20070716">
-github.com/henry20070716
-</a>
-</p>
+    <h2 class="section-title">Education</h2>
 
-<br>
+    <div class="education-card">
 
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/henry-prabhu-a8472636a">
-Henry Prabhu
-</a>
-</p>
+        <h3>Loyola ICAM College of Engineering and Technology</h3>
+
+        <p>B.E. Computer Science and Engineering</p>
+
+        <p>Current CGPA : 8.0</p>
+
+    </div>
 
 </section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-container">
+
+        
+
+        <a href="https://github.com/henry20070716" target="_blank">
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/henry-prabhu-a8472636a/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-<p>© 2026 J. Henry Prabhu | All Rights Reserved</p>
+
+    <p>
+        Designed & Developed by
+        <strong>J. Henry Prabhu</strong>
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved.
+    </p>
+
 </footer>
 
-<script>
-const text = "Aspiring Software Developer 🚀";
-let i = 0;
-
-function typeWriter() {
-if(i < text.length){
-document.getElementById("typing").innerHTML += text.charAt(i);
-i++;
-setTimeout(typeWriter,100);
-}
-}
-
-window.onload = typeWriter;
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
